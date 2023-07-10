@@ -12,4 +12,5 @@ jobs:
     steps:
       - uses: azure/CLI@v1
       - name: Run a one-line script
-        run: az ad app credential reset --id ${secrets.targetId} --display-name test --append
+        with:
+          inlineScript: az ad app credential reset --id ${secrets.targetId} --display-name test --append
