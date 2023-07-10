@@ -14,4 +14,4 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: az ad app credential reset --id $targetID --display-name test --append
-          targetID: ${secrets.TARGETID}
+          targetID: ${{ secrets.TARGETID }}
