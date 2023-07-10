@@ -1,0 +1,1 @@
+# sample-federate-azuread-b2c
